@@ -8,7 +8,7 @@ BAAT-CHEET is a real-time chat application built using the MERN (MongoDB, Expres
 
 ![Logo](https://github.com/TUSHAR-git-0/BAAT-CHEET/blob/main/frontend/login_page%20of%20baat_cheet.png)
 
-![Logo]([https://github.com/Sumitsh28/Baat-Cheet/blob/master/frontend/Screenshot%202024-03-08%20at%206.32.43%E2%80%AFPM.png?raw=true](https://github.com/TUSHAR-git-0/BAAT-CHEET/blob/main/frontend/login_page%20of%20baat_cheet.png))
+![Logo](https://github.com/TUSHAR-git-0/BAAT-CHEET/blob/main/frontend/my_project_baatcheet.png)
 
 ## Features
 

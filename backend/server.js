@@ -9,9 +9,13 @@ import cookieParser from "cookie-parser";
 import { app, server } from "./socket/socket.js";
 
 
+
+
 dotenv.config();
 
-const PORT = process.env.PORT || 6000;
+
+
+const PORT = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
 // app.get("/", (req, res) => {

@@ -15,11 +15,11 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("https://baat-cheet-j0y6.onrender.com", {
-        query: {
-          userId: authUser._id,
-        },
-      });
+      const socket = io(import.meta.env.VITE_API_URL, {
+     query: {
+     userId: authUser._id,
+    },
+    });
 
       setSocket(socket);
 

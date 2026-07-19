@@ -24,17 +24,23 @@ const useSignup = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          fullname,
-          username,
-          password,
-          confirmPassword,
-          gender,
-        }),
-      });
+      const res = await fetch(
+  `${import.meta.env.VITE_API_URL}/api/auth/signup`,
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    credentials: "include",
+    body: JSON.stringify({
+      fullname,
+      username,
+      password,
+      confirmPassword,
+      gender,
+    }),
+  }
+);
 
       const data = await res.json();
       console.log(data);

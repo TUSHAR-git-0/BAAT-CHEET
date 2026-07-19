@@ -5,11 +5,11 @@ const generateTokenAndSetCookie = (userId, res) => {
     expiresIn: "15d",
   });
 
-  res.cookie("jwt", token, {
+ res.cookie("jwt", token, {
     maxAge: 15 * 24 * 60 * 60 * 1000,
-    httpOnly: true, //prevent XXS attacks
-    sameSite: "none", // to prevent CSRF attacks
-    secure: true ,
+    httpOnly: true,
+    sameSite: "none",
+    secure: true,
   });
 };
 

@@ -10,6 +10,7 @@ const generateTokenAndSetCookie = (userId, res) => {
     httpOnly: true,
     sameSite: "none",
     secure: true,
+    path: "/",
   });
   
 };

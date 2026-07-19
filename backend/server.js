@@ -30,6 +30,12 @@ const __dirname = path.resolve();
 // });
 app.use(express.json()); // parse req from req.body from json
 app.use(cookieParser());
+
+app.use((req, res, next) => {
+  console.log("Incoming Cookie:", req.headers.cookie);
+  next();
+});
+// debugging middleware to log cookies
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);

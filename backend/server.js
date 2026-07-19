@@ -1,4 +1,5 @@
 import path from "path";
+dotenv.config();
 import express from "express";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.routes.js";
@@ -11,16 +12,13 @@ import cors from "cors";
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https://baat-cheet-1-mnl6.onrender.com",
-    ],
+    origin: "https://baat-cheet-1-mnl6.onrender.com",
     credentials: true,
   })
 );
 
 
-dotenv.config();
+
 
 
 

@@ -7,8 +7,17 @@ import userRoutes from "./routes/user.routes.js";
 import { connectToMongoDB } from "./db/connectToMongoDB.js";
 import cookieParser from "cookie-parser";
 import { app, server } from "./socket/socket.js";
+import cors from "cors";
 
-
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://baat-cheet-1-mnl6.onrender.com",
+    ],
+    credentials: true,
+  })
+);
 
 
 dotenv.config();

@@ -32,7 +32,8 @@ app.use(express.json()); // parse req from req.body from json
 app.use(cookieParser());
 
 app.use((req, res, next) => {
-  console.log("Incoming Cookie:", req.headers.cookie);
+   console.log("Incoming Cookie:", req.headers.cookie);
+   console.log("Parsed Cookie:", req.cookies);
   next();
 });
 // debugging middleware to log cookies
